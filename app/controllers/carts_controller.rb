@@ -1,6 +1,7 @@
 class CartsController < ApplicationController
 
   def show
+    flash[:notice] = "Your cart cannot be empty."
   end
 
   def add_item
